@@ -1,0 +1,138 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/*
+  BEGIN Global Styles
+ */
+h1, h2, h3, h4 {
+  color: #121212;
+  font-family: "acta-display",serif;
+  font-weight: 900;
+}
+
+/**
+  END Global Styles
+ */
+
+/*
+  BEGIN Splash Page Styles
+ */
+body {
+  &.splash {
+    background-color: #000;
+    background-image: url('../images/laravel-crud-starter-splash.jpg');
+    background-size: 2000px;
+    background-repeat: no-repeat;
+  }
+}
+
+.splash-page {
+  h1, h3, a {
+    color: #fff;
+    text-shadow: 2px 2px #272222;
+  }
+  .btn-group {
+    a {
+      text-shadow: none;
+    }
+  }
+  .row {
+    &.title {
+      margin-top: 100px;
+    }
+  }
+}
+
+/*
+  END Splash Page Styles
+ */
+
+/*
+  BEGIN Items Grid View Styles
+ */
+.grid-title {
+  margin-bottom: 30px;
+}
+.thumbnail {
+  &.item-profile {
+    padding: 0;
+    background-color: #F2F2F2;
+    border-radius: 0;
+    .caption {
+      padding-top: 0;
+    }
+    h3 {
+      &.item-name {
+        font-family: acta-display, serif;
+        font-style: normal;
+        font-weight: 500;
+        word-wrap: break-word;
+        max-width: 80%;
+      }
+    }
+    /* BEGIN Item Badge Styles */
+    div {
+      &.itembadge {
+        width: 25px;
+        height: 25px;
+        margin-top: 25px;
+        padding-top: 1px;
+        padding-left: 8px;
+        color: #fff;
+        font-weight: 900;
+        &.type1 {
+          background-color: #3A2D93;
+        }
+        &.type2 {
+          background-color: #A62630;
+        }
+        &.type3 {
+          background-color: #611E95;
+          padding-left: 11px;
+        }
+      }
+    }
+    /* END Item Badge Styles */
+  }
+}
+/*
+  END Items Grid View Styles
+*/
+
+/*
+  BEGIN Admin View Styles
+ */
+.table-wrapper {
+  .admin-controls {
+    margin-bottom: 20px;
+  }
+  .table {
+    &.admin {
+      img {
+        margin: 0 10px 0 10px;
+        width: 60px;
+        height: 60px;
+      }
+    }
+    .glyphicon {
+      cursor: pointer;
+    }
+    .delete-icon {
+      color: #d9534f;
+    }
+    .edit-icon {
+      color: #E6B13C;
+    }
+  }
+}
+
+/*
+ END Admin View Styles
+ */
